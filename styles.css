@@ -17,20 +17,26 @@ h2 {
 
 p {
     text-align: center;
-    
 }
+
 .image {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin: 20px auto;
     display: block;
 }
-.navbar .logo {
-    font-size: 1.5em;
+.navbar {
+    font-size: 1em;
     font-weight: bold;
     color: #ffffff;
-    margin-left: 10px;
+    height: 35px;
+}
+.logo{
+    width: auto;
+    height: 50px;
+    border-radius: 5vh;
+    margin-top: 5px;
 }
 .navbar ul {
     list-style: none;
@@ -75,10 +81,9 @@ p {
     }
 .content-container{
     display: flex;
-    padding-left: 5%;
 }
 .text-ini{
-    margin: 0 15%;
+    margin: 0 5%;
 }
 .text-prob{
     margin: 0 5%;
@@ -125,6 +130,7 @@ p {
     font-size: 1em;
     font-weight: bold;
     margin-top: 10px;
+    
 }
 
 .contact-form button:hover, .comments-form button:hover {
