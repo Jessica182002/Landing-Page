@@ -27,6 +27,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -45,6 +46,7 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .navbar ul li a:hover {
@@ -52,13 +54,13 @@ body {
 }
 
 /* Sección de productos */
-.products-hogar {
+.products-hogar, .products-casa {
     padding: 80px 20px;
     text-align: center;
     background-color: #2a7d7d;
 }
 
-.products-hogar h2 {
+.products-hogar h2, .products-casa h2 {
     color: #ffffff;
     margin-bottom: 20px;
     text-transform: capitalize;
@@ -74,7 +76,7 @@ body {
 }
 
 .product-card {
-    background-color:#94c0c2;
+    background-color: #94c0c2;
     border-radius: 5px;
     width: 250px;
     padding: 15px;
@@ -100,7 +102,6 @@ body {
     color: #333;
 }
 
-/* Botones */
 .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -115,17 +116,7 @@ body {
     background-color: #003d80;
 }
 
-.products-casa {
-    text-align: center;
-}
-
-.products-casa h2 {
-    color: #ffffff;
-    
-    text-transform: capitalize;
-}
-
-/* Footer general */
+/* Footer */
 .footer {
     background-color: #2a7d7d;
     color: #f2f2f2;
@@ -149,7 +140,6 @@ body {
     margin: 10px 0;
 }
 
-/* Formulario de contacto */
 .contact-form {
     max-width: 600px;
     margin: 20px auto;
@@ -189,7 +179,6 @@ body {
     background-color: #004d4d;
 }
 
-/* Mapa */
 .map-container iframe {
     width: 100%;
     max-width: 600px;
@@ -197,9 +186,57 @@ body {
     margin: 20px auto;
 }
 
-/* Nota del footer */
 .footer-note {
     font-size: 12px;
     margin-top: 20px;
     color: #cccccc;
+}
+
+/* Media Queries para Responsividad */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .products-hogar, .products-casa {
+        padding: 60px 10px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
 }
