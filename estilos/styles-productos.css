@@ -1,0 +1,205 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f2f2f2;
+    background-color: #1d4d4f;
+    line-height: 1.6;
+}
+
+/* Logo */
+.logo {
+    width: auto;
+    height: 50px;
+    border-radius: 5vh;
+    margin-top: 5px;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #006669;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 30px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #dddddd;
+}
+
+/* Sección de productos */
+.products-hogar {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #2a7d7d;
+}
+
+.products-hogar h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color:#94c0c2;
+    border-radius: 5px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #0056b3;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #003d80;
+}
+
+.products-casa {
+    text-align: center;
+}
+
+.products-casa h2 {
+    color: #ffffff;
+    
+    text-transform: capitalize;
+}
+
+/* Footer general */
+.footer {
+    background-color: #2a7d7d;
+    color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h2, .footer h3 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.footer p {
+    color: #cccccc;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.contact-form label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background-color: #006669;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #004d4d;
+}
+
+/* Mapa */
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+/* Nota del footer */
+.footer-note {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #cccccc;
+}
